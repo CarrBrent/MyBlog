@@ -5,11 +5,11 @@
 <html>  
 <head>  
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
-<title>User Register Success Page</title>  
+<title>User Register Fail Page</title>  
 </head>  
 <body>  
   
- <a>success!
+ <a>fail!
  </a>
   
 </body>  

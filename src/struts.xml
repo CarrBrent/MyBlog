@@ -6,7 +6,7 @@
 <struts>
 
 	<include file="struts-default.xml" />
-	<package name="ynwi" extends="struts-default">
+	<package name="myblog" extends="struts-default">
 		<action name="register" class="com.myblog.action.RegisterAction">
 			<result name="input">/Register.jsp</result>
 			<result name="success">/Success.jsp</result>
