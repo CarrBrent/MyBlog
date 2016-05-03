@@ -11,6 +11,7 @@
   
     <s:form action="register">  
         <s:textfield name="user.username" label="用户名"></s:textfield>  
+        <s:password name="user.email" label="邮箱"></s:password>
         <s:password name="user.password" label="密码"></s:password>  
         <s:select list="#{'1':'男','0':'女'}" listKey="key" listValue="value"  
             name="user.gender" label="性别" value="1"></s:select>  
