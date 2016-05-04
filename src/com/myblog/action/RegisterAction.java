@@ -1,20 +1,21 @@
 package com.myblog.action;
 import com.opensymphony.xwork2.ActionSupport;  
 import com.myblog.bean.User;  
+import com.myblog.from.UserFrom;
 import com.myblog.service.UserManager;  
 import com.myblog.serviceImpl.UserManagerImpl;  
 
 public class RegisterAction extends ActionSupport{
 	private static final long serialVersionUID = 1L;  
 
-	private User user;  
+	private UserFrom user;  
 
 	private UserManager userManager;  
-	public User getUser() {  
+	public UserFrom getUser() {  
 		return user;  
 	}  
 
-	public void setUser(User user) {  
+	public void setUser(UserFrom user) {  
 		this.user = user;  
 	}  
 

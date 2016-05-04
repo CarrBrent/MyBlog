@@ -1,17 +1,10 @@
-package com.myblog.bean;
+package com.myblog.from;
 
-public class User {
-	private int userId;
+public class UserFrom {
 	private String username;  
     private String password; 
     private String email;
     private int gender;
-	public int getUserId() {
-		return userId;
-	}
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
 	public String getUsername() {
 		return username;
 	}
@@ -36,6 +29,5 @@ public class User {
 	public void setGender(int gender) {
 		this.gender = gender;
 	} 
-    
 
 }

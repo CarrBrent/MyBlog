@@ -1,7 +1,7 @@
 package com.myblog.service;
-import com.myblog.bean.User;  
+import com.myblog.from.UserFrom;  
 
 public interface UserManager {
-	public void regUser(User user);  
+	public void regUser(UserFrom userFrom);  
 
 }
