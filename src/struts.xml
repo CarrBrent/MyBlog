@@ -7,7 +7,7 @@
 
 	<include file="struts-default.xml" />
 	<package name="myblog" extends="struts-default">
-		<action name="register" class="com.myblog.action.RegisterAction">
+		<action name="register" class="RegisterAction">
 			<result name="input">/Register.jsp</result>
 			<result name="success">/Success.jsp</result>
 			<result name="error">/Fail.jsp</result>

@@ -1,27 +1,15 @@
 package com.myblog.daoImpl;
 
 import org.hibernate.HibernateException;
-import org.hibernate.Session;
+import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
 import com.myblog.dao.BaseDao;
 
-public class UserDao implements BaseDao{
-	private Session session;  
+public class UserDao extends HibernateDaoSupport implements BaseDao{
 
 	@Override  
-	public Session getSession() {  
-		return session;  
-	}  
-
-	@Override  
-	public void setSession(Session session) {  
-		this.session = session;  
-	}  
-
-	@Override  
-	public void saveObject(Object obj) throws HibernateException {  
-		session.save(obj);  
-	}  
-
+    public void saveObject(Object obj) throws HibernateException {  
+        getHibernateTemplate().save(obj);  
+    }  
 
 }
