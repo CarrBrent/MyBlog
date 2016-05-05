@@ -4,7 +4,17 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
 	<display-name>MyBlog</display-name>
-
+    
+    <!--加载Spring的applicationContext.xml文件 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:applicationContext.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+    <!-- 设置监听加载上下文 -->
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
@@ -15,14 +25,7 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-	<!--加载Spring的applicationContext.xml文件 -->
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:applicationContext.xml</param-value>
-	</context-param>
+	
 
 
 	<welcome-file-list>
