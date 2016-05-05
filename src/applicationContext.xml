@@ -37,7 +37,7 @@
 	<!-- SessionFactory使用的数据源为上面的数据源 -->
 	<!-- 指定了Hibernate的映射文件和配置信息 -->
 	<bean id="sessionFactory"
-		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource">
 			<ref local="dataSource" />
 		</property>
@@ -60,7 +60,7 @@
 	</bean>
 
 	<bean id="transactionManager"
-		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
 	<!--DaoImpl类 -->
